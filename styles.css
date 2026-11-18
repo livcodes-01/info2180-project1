@@ -1,11 +1,103 @@
 /* Add your CSS to this file */
 body {
-    margin: 0;
-    font-size: 16px;
+    	margin: 0;
+    	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header {
+	margin: 0;
+	padding: 5px;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+header h1 {
+	text-align: left;
+	font-size: 16px;
+}
+
+/* ---- Navigation (horizontal menu with UL) ---- */
+
+nav {
+	
+	margin-top: 0;
+	padding: 5px;
+}
+
+/* flex and grid displays allow for more control of elements in a container */
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;             /* horizontal layout */
+	flex-wrap: wrap;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+nav li {
+    /* child selector example: styled through li > a */
+}
+
+nav li > a {
+    	display: block;
+    	padding: 5px 10px;
+    	font-size: 15px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.overview-hero .container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.overview-hero-image img {
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
+	float: left;
+	margin-right: 20px;
+}
+
+.overview-hero-text {
+	flex: 1;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	align-items: stretch;
+}
+
+.card {
+	border:1px solid #000000;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card img {
+        background-color: transparent;
+       	height: 150px;
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.card-body {
+	flex: 1;
 }
