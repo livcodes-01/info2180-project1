@@ -11,6 +11,7 @@ body {
     width: 100%;
 }
 
+/*Header*/
 header {
 	background-color: #fff;
 	margin: 0;
@@ -36,7 +37,6 @@ nav {
 	padding: 5px;
 }
 
-/* flex and grid displays allow for more control of elements in a container */
 nav ul {
 	margin: 0;
 	padding: 0;
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav li {
-    /* child selector example: styled through li > a */
+
 }
 
 nav li > a {
@@ -62,6 +62,7 @@ nav li > a:hover {
 	color: #5A67D8;
 }
 
+/*Hero Overview Section*/
 .overview-hero {
 	background-color: #E2E8F0;
 	padding: 40px;
@@ -85,6 +86,7 @@ nav li > a:hover {
 	flex: 1;
 }
 
+/*Learn About section*/
 .learn-about h2{
 	font-size: 24px;
 	color: #48BB78;
@@ -124,6 +126,7 @@ nav li > a:hover {
 	color: #48BB78;
 }
 
+/*COVID-19 Testing Programme Section*/
 .testing {
 	padding: 60px;
 	margin-top: 20px;
@@ -151,6 +154,7 @@ nav li > a:hover {
 	border-radius: 5px;
 }
 
+/*Recent Stories Section*/
 .stories {
 	padding: 20px;
 }
@@ -187,6 +191,7 @@ article img {
 	text-decoration: none;
 }
 
+/*Newsletter section*/
 .newsletter {
 	background-color: #48BB78;
 	color: #fff;
@@ -222,6 +227,7 @@ article img {
 	border-radius: 1px;
 }
 
+/*Footer section*/
 footer {
 	background-color: #4A5568;
 	color: #fff;
